@@ -1,0 +1,631 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 23, ../sass/screen.scss */
+html {
+  height: auto;
+}
+
+@font-face {
+  font-family: "jura-medium-webfont";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/jura-medium-webfont.eot") format("embedded-opentype"), url("../fonts/jura-medium-webfont.woff") format("woff"), url("../fonts/jura-medium-webfont.ttf") format("truetype");
+}
+/* line 34, ../sass/screen.scss */
+.bg {
+  padding: 1px 20px 10px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+/* line 39, ../sass/screen.scss */
+.bg2 {
+  padding: 1px 20px 10px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.92);
+  padding-top: 10px;
+}
+
+/* line 46, ../sass/screen.scss */
+.effect-rotateleft .container::after {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* line 50, ../sass/screen.scss */
+.outer-nav {
+  width: 7em;
+}
+/* line 52, ../sass/screen.scss */
+.outer-nav a {
+  margin-bottom: 10px;
+}
+
+/* line 57, ../sass/screen.scss */
+.outer-nav a:hover {
+  color: #fff;
+  background: #db6833 !important;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+}
+
+/* line 63, ../sass/screen.scss */
+.effect-rotateleft.animate .outer-nav a {
+  display: block;
+  background: #ff7b0d;
+  text-align: center;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+/* line 71, ../sass/screen.scss */
+body {
+  background: url("../img/oksen_hardanger-1400.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: "jura-medium-webfont";
+}
+
+/* line 77, ../sass/screen.scss */
+.reveal-modal {
+  top: 5px;
+}
+
+/* line 81, ../sass/screen.scss */
+.perspective {
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* line 85, ../sass/screen.scss */
+.menu {
+  margin: 19px 5px 0 5px;
+  background: none repeat scroll 0 0 #ff7b0d;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 7px 10px;
+  line-height: 20px;
+  display: block;
+  color: #fff;
+}
+/* line 94, ../sass/screen.scss */
+.menu:hover {
+  background: #e86a32;
+  color: #fff;
+}
+
+/* line 100, ../sass/screen.scss */
+hr {
+  margin-top: -1px;
+  border-color: #099abc;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+/* line 107, ../sass/screen.scss */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* line 111, ../sass/screen.scss */
+.child {
+  font-size: 16px !important;
+  margin-left: -14px;
+  box-shadow: none !important;
+}
+
+/* line 117, ../sass/screen.scss */
+.parent {
+  font-size: 19px;
+  border-radius: 5px;
+  padding: 1px 5px;
+  display: inline-block;
+  background: #099abc;
+  color: #fff;
+}
+/* line 124, ../sass/screen.scss */
+.parent:hover {
+  background: #FF7B0D;
+  color: #fff;
+}
+
+/* line 130, ../sass/screen.scss */
+.map {
+  border-radius: 10px;
+}
+/* line 131, ../sass/screen.scss */
+.map h4 {
+  color: #000;
+}
+/* line 134, ../sass/screen.scss */
+.map a {
+  transition: all 0.3s ease-in-out 0s;
+}
+/* line 139, ../sass/screen.scss */
+.map ul {
+  list-style: none;
+  margin-left: -7px;
+  margin-bottom: 0;
+}
+/* line 145, ../sass/screen.scss */
+.map ul li > a {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 3px;
+  line-height: 14px;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* line 152, ../sass/screen.scss */
+.map ul li a:hover {
+  color: #FF7B0D;
+}
+
+/* line 159, ../sass/screen.scss */
+header {
+  margin-top: -20px;
+}
+
+/* line 163, ../sass/screen.scss */
+.comment {
+  color: #b2b2b2;
+  font-size: 13px;
+}
+
+/* line 168, ../sass/screen.scss */
+#logo {
+  font-size: 24px;
+  margin: 19px 0 -7px 0;
+  background: #FF7B0D;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  padding: 0 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+/* line 177, ../sass/screen.scss */
+#logo:hover {
+  background: #e86a32;
+}
+
+/* line 183, ../sass/screen.scss */
+.articles-href h4 {
+  color: #fff;
+  background: #FF7B0D !important;
+}
+
+/* line 188, ../sass/screen.scss */
+.articles-href {
+  margin-top: 5px;
+}
+/* line 190, ../sass/screen.scss */
+.articles-href h4,
+.articles-href ul li {
+  padding: 1px 20px 10px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 10px 5px;
+  margin: 5px;
+  border-radius: 5px;
+  line-height: 20px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 198, ../sass/screen.scss */
+.articles-href h4 a,
+.articles-href ul li a {
+  display: block;
+  line-height: 20px;
+  padding-left: 10px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 206, ../sass/screen.scss */
+.articles-href ul li:hover {
+  background: #FF7B0D;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+/* line 209, ../sass/screen.scss */
+.articles-href ul li:hover a {
+  color: #ffffff;
+}
+
+/* line 215, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6, p {
+  color: #2f2f2f;
+  font-family: "jura-medium-webfont";
+}
+
+/* line 220, ../sass/screen.scss */
+a {
+  color: #099abc;
+}
+
+/* line 224, ../sass/screen.scss */
+a:hover {
+  color: #FF7B0D;
+}
+
+/* line 228, ../sass/screen.scss */
+p {
+  font-size: 16px;
+  text-indent: 40px;
+}
+
+/* line 233, ../sass/screen.scss */
+.indent {
+  margin-left: 20px;
+}
+
+/* line 237, ../sass/screen.scss */
+blockquote {
+  text-indent: 40px;
+}
+
+/* line 241, ../sass/screen.scss */
+a.da-link {
+  font-size: 20px !important;
+}
+
+/* line 245, ../sass/screen.scss */
+.da-slide {
+  left: 5px;
+  top: 5px;
+}
+
+/* line 250, ../sass/screen.scss */
+.da-slider {
+  height: 250px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+/* line 255, ../sass/screen.scss */
+.da-slider p {
+  font-size: 17px !important;
+}
+
+/* line 261, ../sass/screen.scss */
+footer > div p {
+  text-indent: 0;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+/* line 268, ../sass/screen.scss */
+#rohloff {
+  width: 200px;
+}
+
+/* line 272, ../sass/screen.scss */
+li > strong {
+  display: block;
+  color: #000;
+}
+
+/* line 277, ../sass/screen.scss */
+h3 {
+  font-size: 29px;
+  background: none;
+  color: #000;
+  padding: 0 16px;
+}
+
+/* line 284, ../sass/screen.scss */
+.header {
+  color: #007095;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* line 290, ../sass/screen.scss */
+.head-top {
+  padding-bottom: 1px;
+  color: #007095;
+}
+
+/* line 295, ../sass/screen.scss */
+h1 {
+  font-size: 36px;
+  margin: 10px;
+}
+
+/* line 300, ../sass/screen.scss */
+h2 {
+  font-size: 33px;
+}
+
+/* line 305, ../sass/screen.scss */
+.foto h3 {
+  padding: 0 20px;
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 25px;
+  background: #ff8b0d;
+  color: #fff;
+  font-size: 25px;
+}
+/* line 314, ../sass/screen.scss */
+.foto ul {
+  margin-top: 25px;
+}
+
+/* line 319, ../sass/screen.scss */
+.video_wrapp {
+  margin: 10px 0 20px;
+}
+/* line 321, ../sass/screen.scss */
+.video_wrapp > h3 {
+  padding: 0 20px;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 25px;
+  background: #ff8b0d;
+  color: #fff;
+  font-size: 25px;
+}
+/* line 331, ../sass/screen.scss */
+.video_wrapp > a {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* line 337, ../sass/screen.scss */
+.width-small {
+  width: 190px;
+}
+
+/* line 342, ../sass/screen.scss */
+nav.footer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 5px 0 0 0;
+  width: auto;
+}
+/* line 350, ../sass/screen.scss */
+nav.footer ul li:first-child {
+  border-left: none;
+}
+/* line 353, ../sass/screen.scss */
+nav.footer ul li {
+  margin: 10px 0;
+  border-left: 1px solid #099abc;
+  line-height: 14px;
+  padding: 0 10px;
+}
+/* line 358, ../sass/screen.scss */
+nav.footer ul li a {
+  display: block;
+}
+
+/* line 365, ../sass/screen.scss */
+.nav {
+  list-style: none;
+  margin-top: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 373, ../sass/screen.scss */
+.nav li {
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin: 0 2px;
+  line-height: 25px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 386, ../sass/screen.scss */
+.nav li:first-child {
+  border: none;
+}
+/* line 389, ../sass/screen.scss */
+.nav li a {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 5px 7px;
+  font-size: 19px;
+  line-height: 25px;
+  color: #099abc;
+  z-index: 2000;
+}
+/* line 399, ../sass/screen.scss */
+.nav li:hover {
+  box-shadow: 0 0 6px 1px #1cc7ff;
+}
+/* line 402, ../sass/screen.scss */
+.nav li.active {
+  background: #FF7B0D;
+}
+/* line 404, ../sass/screen.scss */
+.nav li.active a {
+  color: #fff;
+}
+
+/* line 410, ../sass/screen.scss */
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 415, ../sass/screen.scss */
+img.right {
+  margin: 10px 0 0 15px;
+}
+
+/* line 419, ../sass/screen.scss */
+img.left {
+  margin: 10px 15px 0 0;
+}
+
+/* line 423, ../sass/screen.scss */
+img.width {
+  margin-bottom: 20px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiMxYTFhMWEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzYjNiMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFhMWExYSIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(25%, rgba(0, 0, 0, 0)), color-stop(60%, #1a1a1a)), radial-gradient(closest-side at 50% 50%, #b3b3b3, #1a1a1a);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 25%, #1a1a1a 60%), -moz-radial-gradient(50% 50%, closest-side, #b3b3b3, #1a1a1a);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 25%, #1a1a1a 60%), -webkit-radial-gradient(50% 50%, closest-side, #b3b3b3, #1a1a1a);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 25%, #1a1a1a 60%), radial-gradient(closest-side at 50% 50%, #b3b3b3, #1a1a1a);
+}
+
+/* line 430, ../sass/screen.scss */
+main img img.back {
+  width: 200px;
+}
+/* line 434, ../sass/screen.scss */
+main p {
+  margin: 0 0 20px 0;
+}
+/* line 437, ../sass/screen.scss */
+main h4.minus {
+  margin: 10px 0;
+}
+/* line 440, ../sass/screen.scss */
+main cite {
+  color: #099abc;
+}
+/* line 443, ../sass/screen.scss */
+main cite:hover {
+  color: #FF7B0D;
+}
+
+/* line 448, ../sass/screen.scss */
+ul.compare > li {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* line 453, ../sass/screen.scss */
+.th {
+  margin: 5px 0;
+  border: 3px solid rgba(255, 255, 255, 0.92);
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  border-radius: 5px;
+  transition: all 200ms ease-out 0s;
+  box-shadow: 0 0 10px 0 #9f9f9f;
+  background: white;
+}
+
+/* line 465, ../sass/screen.scss */
+.th:hover, .th:focus {
+  box-shadow: 0 0 6px 1px #1cc7ff;
+}
+
+/* line 470, ../sass/screen.scss */
+.fancybox-title-float-wrap .child {
+  font-family: "jura-medium-webfont";
+  font-style: normal;
+  font-size: 12px;
+  color: #1cc7ff;
+}
+
+/* line 477, ../sass/screen.scss */
+section > h3 {
+  margin-top: 10px;
+}
+
+/*********** Animation start ***********/
+/* line 482, ../sass/screen.scss */
+.animated-duration-2 {
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/* line 488, ../sass/screen.scss */
+.animated-duration-25 {
+  -moz-animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+/* line 494, ../sass/screen.scss */
+.animated-duration-3 {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+/* line 500, ../sass/screen.scss */
+.animated-duration-35 {
+  -moz-animation-duration: 3.5s;
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+}
+
+/* line 506, ../sass/screen.scss */
+.animated-delay-1 {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* line 512, ../sass/screen.scss */
+.animated-delay-2 {
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/* line 518, ../sass/screen.scss */
+.animated-delay-3 {
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+/* line 524, ../sass/screen.scss */
+.animated-delay-4 {
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+/* line 530, ../sass/screen.scss */
+.animated-delay-5 {
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/**********Animation end***********/

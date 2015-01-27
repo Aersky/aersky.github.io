@@ -1,0 +1,536 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+//@import "compass/reset";
+//font-family: "Titillium",Arial,sans-serif;
+@import "compass/css3";
+
+$font-family: "jura-medium-webfont";
+$font-color: #2f2f2f;
+$a-color: #FF7B0D;
+$bg-color: rgba(255, 255, 255, 0.92);
+$a-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+@mixin bg {
+  padding: 1px 20px 10px 20px;
+  background: $bg-color;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: $a-shadow;
+}
+
+html {
+  height: auto;
+}
+
+@font-face {
+  font-family: "jura-medium-webfont";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/jura-medium-webfont.eot") format("embedded-opentype"), url("../fonts/jura-medium-webfont.woff") format("woff"), url("../fonts/jura-medium-webfont.ttf") format("truetype");
+}
+
+.bg {
+  @include bg;
+  overflow: hidden;
+}
+
+.bg2 {
+  @include bg;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.92);
+  padding-top: 10px;
+}
+
+.effect-rotateleft .container::after {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.outer-nav {
+  width: 7em;
+  a {
+    margin-bottom: 10px;
+  }
+}
+
+.outer-nav a:hover {
+  color: #fff;
+  background: #db6833 !important;
+  @include box-shadow(rgba(0, 0, 0, 0.4) 0 0 5px);
+}
+
+.effect-rotateleft.animate .outer-nav a {
+  display: block;
+  background: #ff7b0d;
+  text-align: center;
+  @include border-radius(7px);
+  @include transition(all 0.1s ease-in-out 0s);
+}
+
+body {
+  background: url("../img/oksen_hardanger-1400.jpg") no-repeat center center fixed;
+  @include background-size(cover);
+  font-family: $font-family;
+}
+
+.reveal-modal {
+  top: 5px;
+}
+
+.perspective {
+  @include transition(all 1s ease-in-out)
+}
+
+.menu {
+  margin: 19px 5px 0 5px;
+  background: none repeat scroll 0 0 #ff7b0d;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 7px 10px;
+  line-height: 20px;
+  display: block;
+  color: #fff;
+  &:hover {
+    background: #e86a32;
+    color: #fff;
+  }
+}
+
+hr {
+  margin-top: -1px;
+  border-color: #099abc;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.child {
+  font-size: 16px !important;
+  margin-left: -14px;
+  box-shadow: none !important;
+}
+
+.parent {
+  font-size: 19px;
+  border-radius: 5px;
+  padding: 1px 5px;
+  display: inline-block;
+  background: #099abc;
+  color: #fff;
+  &:hover {
+    background: $a-color;
+    color: #fff;
+  }
+}
+
+.map {
+  h4 {
+    color: #000;
+  }
+  a {
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  border-radius: 10px;
+  ul {
+    list-style: none;
+    margin-left: -7px;
+    margin-bottom: 0;
+
+    li {
+      > a {
+        display: inline-block;
+        padding: 2px 5px;
+        margin: 3px;
+        line-height: 14px;
+        transition: all 0.3s ease-in-out 0s;
+      }
+      a:hover {
+        color: $a-color;
+      }
+    }
+  }
+}
+
+header {
+  margin-top: -20px;
+}
+
+.comment {
+  color: #b2b2b2;
+  font-size: 13px;
+}
+
+#logo {
+  font-size: 24px;
+  margin: 19px 0 -7px 0;
+  background: $a-color;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  padding: 0 6px;
+  box-shadow: $a-shadow;
+  &:hover {
+    background: #e86a32;
+  }
+
+}
+
+.articles-href h4 {
+  color: #fff;
+  background: $a-color !important;
+}
+
+.articles-href {
+  margin-top: 5px;
+  h4,
+  ul li {
+    @include bg;
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    line-height: 20px;
+    @include transition(all 0.3s ease-in-out);
+    a {
+      display: block;
+      line-height: 20px;
+      padding-left: 10px;
+      @include transition(all 0.3s ease-in-out);
+    }
+
+  }
+  ul li:hover {
+    background: $a-color;
+    box-shadow: $a-shadow;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $font-color;
+  font-family: $font-family;
+}
+
+a {
+  color: #099abc;
+}
+
+a:hover {
+  color: $a-color;
+}
+
+p {
+  font-size: 16px;
+  text-indent: 40px;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+blockquote {
+  text-indent: 40px;
+}
+
+a.da-link {
+  font-size: 20px !important;
+}
+
+.da-slide {
+  left: 5px;
+  top: 5px;
+}
+
+.da-slider {
+  height: 250px;
+  background: $bg-color;
+  box-shadow: $a-shadow;
+
+  p {
+    font-size: 17px !important;
+  }
+}
+
+footer > div {
+  p {
+    text-indent: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+#rohloff {
+  width: 200px;
+}
+
+li > strong {
+  display: block;
+  color: #000;
+}
+
+h3 {
+  font-size: 29px;
+  background: none;
+  color: #000;
+  padding: 0 16px;
+}
+
+.header {
+  color: #007095;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.head-top {
+  padding-bottom: 1px;
+  color: #007095;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+.foto {
+  h3 {
+    padding: 0 20px;
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 25px;
+    background: rgb(255, 139, 13);
+    color: #fff;
+    font-size: 25px;
+  }
+  ul {
+    margin-top: 25px;
+  }
+}
+
+.video_wrapp {
+  margin: 10px 0 20px;
+  > h3 {
+    padding: 0 20px;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 25px;
+    background: rgb(255, 139, 13);
+    color: #fff;
+    font-size: 25px;
+  }
+
+  > a {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+.width-small {
+  width: 190px;
+}
+
+nav.footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 5px 0 0 0;
+    width: auto;
+    li:first-child {
+      border-left: none;
+    }
+    li {
+      margin: 10px 0;
+      border-left: 1px solid #099abc;
+      line-height: 14px;
+      padding: 0 10px;
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+.nav {
+  list-style: none;
+  margin-top: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  li {
+
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    background: $bg-color;
+    -webkit-box-shadow: $a-shadow;
+    -moz-box-shadow: $a-shadow;
+    box-shadow: $a-shadow;
+    margin: 0 2px;
+    line-height: 25px;
+    @include transition(all 0.3s ease-in-out);
+    &:first-child {
+      border: none;
+    }
+    a {
+      @include transition(all 0.3s ease-in-out);
+      display: inline-block;
+      padding: 5px 7px;
+      font-size: 19px;
+      line-height: 25px;
+      color: #099abc;
+      z-index: 2000;
+    }
+  }
+  li:hover {
+    box-shadow: 0 0 6px 1px #1cc7ff;
+  }
+  li.active {
+    background: $a-color;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+img.right {
+  margin: 10px 0 0 15px;
+}
+
+img.left {
+  margin: 10px 15px 0 0;
+}
+
+img.width {
+  margin-bottom: 20px;
+  @include background-image(linear-gradient(to top, transparent 25%, #1a1a1a 60%), radial-gradient(closest-side at 50% 50%, #b3b3b3, #1a1a1a));
+}
+
+main {
+  img {
+    img.back {
+      width: 200px;
+    }
+  }
+  p {
+    margin: 0 0 20px 0;
+  }
+  h4.minus {
+    margin: 10px 0;
+  }
+  cite {
+    color: #099abc;
+  }
+  cite:hover {
+    color: $a-color;
+  }
+}
+
+ul.compare > li {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.th {
+  margin: 5px 0;
+  border: 3px solid $bg-color;
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  border-radius: 5px;
+  transition: all 200ms ease-out 0s;
+  box-shadow: 0 0 10px 0 #9f9f9f;
+  background: rgba(255, 255, 255, 1);
+}
+
+.th:hover, .th:focus {
+  box-shadow: 0 0 6px 1px #1cc7ff;
+
+}
+
+.fancybox-title-float-wrap .child {
+  font-family: $font-family;
+  font-style: normal;
+  font-size: 12px;
+  color: #1cc7ff;
+}
+
+section > h3 {
+  margin-top: 10px;
+}
+
+/*********** Animation start ***********/
+.animated-duration-2 {
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated-duration-25 {
+  -moz-animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.animated-duration-3 {
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.animated-duration-35 {
+  -moz-animation-duration: 3.5s;
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+}
+
+.animated-delay-1 {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated-delay-2 {
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated-delay-3 {
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated-delay-4 {
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated-delay-5 {
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/**********Animation end***********/
